@@ -6,6 +6,7 @@ function App() {
 
   const [linea1, setLinea1] = useState("");
   const [linea2, setLinea2] = useState("");
+  const [imagen, setImagen] = useState("");
 
   const onChangeLinea1 = evento => {
     setLinea1(evento.target.value);
@@ -15,10 +16,14 @@ function App() {
     setLinea2(evento.target.value);
   }
 
+  const onChangeImagen = evento => {
+    setImagen(evento.target.value);
+  }
+
   return (
     <div className="App">
 
-      <select>
+      <select onChange={onChangeImagen}>
         <option value="fire">Casa en llamas</option>
         <option value="futurama">Futurama</option>
         <option value="history">History</option>
@@ -35,7 +40,7 @@ function App() {
       <div>
         <span>{linea1}</span> <br />
         <span>{linea2}</span>
-        <img src="" />
+        <img src={"/img/" + imagen + ".jpg"} />
       </div>
 
     </div>
