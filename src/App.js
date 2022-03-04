@@ -37,7 +37,7 @@ function App() {
 
       <button>Exportar</button>
 
-      <div>
+      <div className="meme">
         <span>{linea1}</span> <br />
         <span>{linea2}</span>
         <img src={"/img/" + imagen + ".jpg"} />
