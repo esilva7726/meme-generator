@@ -54,3 +54,7 @@
 .meme img {
   width: 100%;
 }
+
+body, .meme {
+  background: black;
+}
