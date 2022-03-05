@@ -1,4 +1,4 @@
-# Meme Generator
+# Meme Generator with ReactJS
 
 This project allow create yours memes and export it.
 
